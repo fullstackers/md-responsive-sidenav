@@ -173,6 +173,7 @@ module.exports = function (grunt) {
     // Convert Angular Templates to JavaScript
     html2js: {
       options: {
+        module: 'md-responsive-sidenav-templates',
         htmlmin: {
           collapseWhitespace: true,
           removeComments: true

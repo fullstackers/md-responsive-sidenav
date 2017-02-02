@@ -3,7 +3,7 @@
 
   angular
     .module("md-responsive-sidenav", [
-      "templates-generated",
+      "md-responsive-sidenav-templates",
       "ngMaterial"
     ]);
 }());

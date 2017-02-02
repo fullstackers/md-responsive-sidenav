@@ -3,7 +3,7 @@
 
   angular
     .module("md-responsive-sidenav", [
-      "templates-generated",
+      "md-responsive-sidenav-templates",
       "ngMaterial"
     ]);
 }());
@@ -71,7 +71,7 @@
   }
 
 }());
-;angular.module('templates-generated', ['../app/directive/responsive-side-nav/responsive-sidenav.html']);
+;angular.module('md-responsive-sidenav-templates', ['../app/directive/responsive-side-nav/responsive-sidenav.html']);
 
 angular.module("../app/directive/responsive-side-nav/responsive-sidenav.html", []).run(["$templateCache", function ($templateCache) {
   $templateCache.put("../app/directive/responsive-side-nav/responsive-sidenav.html",
