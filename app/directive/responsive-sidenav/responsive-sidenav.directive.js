@@ -13,7 +13,7 @@
       controllerAs: "vm",
       replace: true,
       restrict: "E",
-      templateUrl: "../app/directive/responsive-side-nav/responsive-side-nav.html"
+      templateUrl: "../app/directive/responsive-sidenav/responsive-sidenav.html"
     };
   }
 
