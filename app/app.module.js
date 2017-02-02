@@ -4,6 +4,7 @@
   angular
     .module("md-responsive-sidenav", [
       "md-responsive-sidenav-templates",
+      "ng-animate",
       "ngMaterial"
     ]);
 }());
