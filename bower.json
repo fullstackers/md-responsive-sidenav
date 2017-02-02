@@ -1,0 +1,26 @@
+{
+  "name": "angular-material-sidenav",
+  "authors": [
+    "Ho Kai Yip <ho.kai.yip@fullstackers.com>"
+  ],
+  "description": "Responsive Angular Material Sidenav",
+  "main": "dist/index.js",
+  "keywords": [
+    "Responsive",
+    "Angular",
+    "Material"
+  ],
+  "license": "MIT",
+  "homepage": "www.fullstackers.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.1.3"
+  }
+}
