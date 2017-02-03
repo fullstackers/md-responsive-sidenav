@@ -364,6 +364,14 @@ module.exports = function (grunt) {
           './generated/js/**/*.js'
         ],
         dest: 'dist/index.js'
+      },
+      generated: {
+        src: [
+          './generated/app/**/*.module.js',
+          './generated/app/**/*.js',
+          './generated/js/**/*.js'
+        ],
+        dest: 'generated/js/index.js'
       }
     }
   });
@@ -377,7 +385,8 @@ module.exports = function (grunt) {
     'less:generated',
     'autoprefixer:generated',
     'copy:generated',
-    'wiredep:generated'
+    'wiredep:generated',
+    'concat:generated'
   ]);
 
   grunt.registerTask('build', ['eslint', 'jshint', 'core-build']);
