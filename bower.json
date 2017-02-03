@@ -4,7 +4,6 @@
     "Ho Kai Yip <ho.kai.yip@fullstackers.com>"
   ],
   "description": "Responsive Angular Material Sidenav",
-  "main": "dist/index.js",
   "keywords": [
     "Responsive",
     "Angular",
@@ -21,6 +20,7 @@
     "tests"
   ],
   "main": [
+    "dist/index.js",
     "app/**/*.module.js",
     "app/**/*.config.js",
     "app/**/*.run.js",
@@ -28,6 +28,7 @@
   ],
   "dependencies": {
     "angular-animate": "^1.5.9",
-    "angular-material": "^1.1.1"
+    "angular-material": "^1.1.1",
+    "font-awesome": "^4.7.0"
   }
 }
