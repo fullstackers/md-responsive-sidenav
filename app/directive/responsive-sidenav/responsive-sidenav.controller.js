@@ -16,7 +16,6 @@
 
     var vm = this;
 
-    vm.links = ["Dashboard"];
     vm.authenicated = true;
 
     vm.openNav = openNav;

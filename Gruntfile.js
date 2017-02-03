@@ -361,7 +361,7 @@ module.exports = function (grunt) {
         src: [
           './generated/app/**/*.module.js',
           './generated/app/**/*.js',
-          './generated/**/*.js'
+          './generated/js/**/*.js'
         ],
         dest: 'dist/index.js'
       }

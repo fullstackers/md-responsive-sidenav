@@ -9,6 +9,9 @@
     "Angular",
     "Material"
   ],
+  "main": [
+    "dist/index.js"
+  ],
   "license": "MIT",
   "homepage": "www.fullstackers.com",
   "private": true,
@@ -20,7 +23,6 @@
     "tests"
   ],
   "main": [
-    "dist/index.js",
     "app/**/*.module.js",
     "app/**/*.config.js",
     "app/**/*.run.js",

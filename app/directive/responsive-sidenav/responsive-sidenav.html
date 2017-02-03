@@ -5,7 +5,7 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
       </md-button>
       <span flex></span>
-      <h1>Vendor Admin Dashboard</h1>
+      <h1>{{title}}</h1>
       <span flex></span>
       <md-button class="md-icon-button show-sm" aria-label="Sign Out" ng-click="vm.signOut()">
         <i class="fa fa-sign-out"></i>
@@ -28,12 +28,7 @@
           </md-button>
         </md-toolbar>
 
-        <md-menu-content>
-          <md-menu-item ng-repeat="link in vm.links">
-            <md-button class="md-secondary md-raised" ui-sref="{{link|lowercase}}" ng-click="vm.closeNav()">{{link}}
-            </md-button>
-          </md-menu-item>
-        </md-menu-content>
+        <div ng-include src="sideTemplate"></div>
 
       </md-content>
 
