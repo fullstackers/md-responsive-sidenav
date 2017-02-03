@@ -372,19 +372,20 @@ module.exports = function (grunt) {
 
   grunt.registerTask('core-build', [
     'mkdir:generated',
-    //'symlink:generated',
+    'symlink:generated',
     'html2js:generated',
     'less:generated',
     'autoprefixer:generated',
-    'copy:generated'
-    // ,
-    // 'wiredep:generated'
+    'copy:generated',
+    'wiredep:generated'
   ]);
 
   grunt.registerTask('build', ['eslint', 'jshint', 'core-build']);
 
   grunt.registerTask('dist', [
-    'build',
+    'mkdir:generated',
+    'html2js:generated',
+    'copy:generated',
     'concat:dist'
   ]);
 

@@ -20,6 +20,12 @@
     "test",
     "tests"
   ],
+  "main": [
+    "app/**/*.module.js",
+    "app/**/*.config.js",
+    "app/**/*.run.js",
+    "app/**/*.js"
+  ],
   "dependencies": {
     "angular-animate": "^1.5.9",
     "angular-material": "^1.1.1"
