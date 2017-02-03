@@ -16,12 +16,8 @@
 
     var vm = this;
 
-    vm.authenicated = true;
-
     vm.openNav = openNav;
     vm.closeNav = closeNav;
-    vm.signOut = signOut;
-    vm.signIn = signIn;
 
     function openNav() {
       $mdSidenav("left").toggle();
@@ -31,13 +27,6 @@
       $mdSidenav("left").close();
     }
 
-    function signOut() {
-      vm.authenicated = false;
-    }
-
-    function signIn() {
-      vm.authenicated = true;
-    }
 
   }
 
