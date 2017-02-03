@@ -12,7 +12,9 @@
       controller: "SideNavController",
       controllerAs: "vm",
       replace: true,
-      scope: {},
+      scope: {
+        closeEnable: "="
+      },
       restrict: "E",
       templateUrl: "../app/directive/responsive-sidenav/responsive-sidenav.html",
       link: function (scope, element, attrs) {

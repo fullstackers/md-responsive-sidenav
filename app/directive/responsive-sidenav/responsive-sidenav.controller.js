@@ -12,12 +12,13 @@
     .controller("SideNavController", SideNavController);
 
   /* @ngInject */
-  function SideNavController($mdSidenav) {
+  function SideNavController($mdSidenav, $scope) {
 
     var vm = this;
 
     vm.openNav = openNav;
     vm.closeNav = closeNav;
+    vm.close = close;
 
     function openNav() {
       $mdSidenav("left").toggle();
@@ -27,6 +28,9 @@
       $mdSidenav("left").close();
     }
 
+    function close() {
+      $scope.$emit("$nav-close");
+    }
 
   }
 
